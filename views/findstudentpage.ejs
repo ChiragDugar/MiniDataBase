@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FIND A STUDENT</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<style>
+#but{
+    margin-left: 45%;
+}
+
+#tag{
+    margin-left: 37%;
+}
+
+
+</style>
+
+<body>
+    <h1>FIND A STUDENT RECORD</h1> <br><br>
+    <form action="/findstudentresponse" method="POST">
+        <input type="text" placeholder="Enter the Registration Number" name="freg"><br><br>
+        <button>FIND THE STUDENT</button>
+    </form>
+    
+    <br><br>
+    <form action="/findall" method="POST">
+        <button id="but">SHOW DB </button>
+    </form>
+
+    <a href="/" id="tag">BACK TO HOME</a>
+
+</body>
+</html>

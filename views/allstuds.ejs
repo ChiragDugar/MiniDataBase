@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>STUDENT DATABADSE</title>
+</head>
+
+<style>
+body{
+    background-color:lightgoldenrodyellow;
+    text-align: center;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+span{
+    font-size: 16px;
+    font-weight: bolder;
+}
+h1{
+    text-align: center;
+    color: purple;
+    text-decoration: underline;
+}
+</style>
+
+<body>
+    <h1>STUDENT DATABASE</h1> <br>
+    <% result.forEach(function(user){ %>
+        <div>
+                <span> NAME: </span><%= user.name %> <br>
+                <span>REGISTRATION NUMBER: </span><%= user.reg %> <br>
+                <span>COURSE: </span><%= user.course %> <br>    
+                <span>E-MAIL: </span><%= user.email %>  <br>
+                <span>CONTACT NUMBER: </span><%= user.num %> <br>  <br><br>
+             </div>
+    <% }) %>
+
+    <a href="/findstudent">BACK TO FIND STUDENT</a>
+</body>
+</html>

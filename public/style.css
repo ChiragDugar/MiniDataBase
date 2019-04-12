@@ -1,0 +1,59 @@
+body{
+    background-color:lightgoldenrodyellow;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+    border: 2.5px solid black;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 40%;
+    width: 300px;
+}
+
+a:hover{
+    color: red;
+}
+
+div{
+    font-size: 15px;
+}
+
+b{
+    font-size: 18px;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    margin-left: 40%;
+    width: 200px;   
+    /* color: red;  */
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+button{
+    text-align: center;
+    margin-left: 43%;
+    border: 2px solid black;
+    background-color:#9CA;
+    padding: 3px;
+    border-radius: 3px;
+}
+button:hover{
+    background-color: green;
+    font-weight: bold;
+    color: white; 
+    cursor: pointer;
+    
+}
