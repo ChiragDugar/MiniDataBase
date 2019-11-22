@@ -4,19 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>STUDENT DATABADSE</title>
+    <title>STUDENT DATABASE</title>
+    <link rel="stylesheet" href="display.css">
 </head>
 
 <style>
-body{
-    background-color:lightgoldenrodyellow;
-    text-align: center;
-    /* font-family: 'Times New Roman', Times, serif; */
-}
-span{
-    font-size: 16px;
-    font-weight: bolder;
-}
 h1{
     text-align: center;
     color: purple;
@@ -25,17 +17,37 @@ h1{
 </style>
 
 <body>
-    <h1>STUDENT DATABASE</h1> <br>
-    <% result.forEach(function(user){ %>
-        <div>
-                <span> NAME: </span><%= user.name %> <br>
-                <span>REGISTRATION NUMBER: </span><%= user.reg %> <br>
-                <span>COURSE: </span><%= user.course %> <br>    
-                <span>E-MAIL: </span><%= user.email %>  <br>
-                <span>CONTACT NUMBER: </span><%= user.num %> <br>  <br><br>
-             </div>
-    <% }) %>
+    <h1 style="text-align: center;" >STUDENT DATABASE</h1> <br>
+    <div class="disp">
+        <% result.forEach(function(user){ %>
+            <table align="center" width="100%" >
+                <tr>
+                    <td class="tobold" >Regstration Number: </td>
+                    <td><%= user.reg %></td>
+                </tr>
+                <tr>
+                    <td class="tobold">Name: </td>
+                    <td><%= user.name %></td>
+                </tr>
+                <tr>
+                    <td class="tobold">Course: </td>
+                    <td><%= user.course %></td>
+                </tr>
+                <tr>
+                    <td class="tobold">E-Mail: </td>
+                    <td><%= user.email %></td>
+                </tr>
+                <tr>
+                    <td class="tobold">Contact Number: </td>
+                    <td><%= user.num %></td>
+                </tr>
+            </table>
+            <hr style="background-color: white; width: 80%; margin: 10px;" > 
+        <% }) %>
+    </div>
 
-    <a href="/findstudent">BACK TO FIND STUDENT</a>
+    <form action="/" style="margin-left: 43%; margin-top: 2%;" >
+        <input type="submit" value="Go Back" class="button" id="third"><br><br>            
+    </form>
 </body>
 </html>

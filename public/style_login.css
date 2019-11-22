@@ -1,0 +1,113 @@
+body{
+    background-color: black;
+    background: url('../Assets/final.PNG');
+    background-size: cover;               
+    background-repeat: no-repeat;
+    background-position: center center; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+input{
+    text-align: center;
+    outline: none
+}
+
+i{
+    color: white;
+    opacity: 0.6;
+    font-size: 14px;
+    padding-right: 5px;
+    position: relative;
+    top: 1px;
+    left: 35px;
+}
+
+.container{
+    margin-top: 10%;
+    margin-right: 67%;
+    background-color: black;
+    text-align: center;
+    width: 430px;
+    height: 400px;
+    /* border: 1.5px solid deeppink; */
+    border-radius: 10px;
+    box-shadow: 2px 3px 15px 15px rgba(0, 0, 0, 0.3)
+}
+
+
+#hello{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: white;
+    opacity: 0.6;
+    font-weight: 600
+}
+
+#first{
+    margin-bottom: 25px;
+    border: 2.5px solid purple;
+    border-radius: 100px;
+    padding: 10px;
+    width: 250px;
+    height: 45px;
+    background-color: black;
+    color: white;
+}
+
+#second{
+    margin-bottom: 30px;
+    border: 2.5px solid purple;
+    border-radius: 100px;
+    padding: 10px;
+    width: 250px;
+    height: 45px;
+    background-color: black;
+    color: white;
+}
+
+#third{    
+    text-decoration: none;
+    border: 2.5px solid darkgreen;
+    padding: 10px;
+    border-radius: 100px;
+    width: 140px;
+    display: inline-block;
+    background-color: black;
+    color: #B0B0B0;
+}
+
+#third:active{
+    border-color: white;
+}
+
+#fourth{
+    margin-bottom: 30px;
+    border: 2.5px solid purple;
+    border-radius: 100px;
+    padding: 10px;
+    width: 250px;
+    height: 45px;
+    background-color: black;
+    color: white;
+}
+
+#fifth{
+    margin-bottom: 30px;
+    border: 2.5px solid purple;
+    border-radius: 100px;
+    padding: 10px;
+    width: 250px;
+    height: 45px;
+    background-color: black;
+    color: white;
+}
+
+#final{
+    color: silver;
+}
+
+#show{
+    color: red;
+    font-weight: 600;
+}

@@ -8,22 +8,21 @@
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/43b6d4a4e8.js"></script>
     <title>Add Student</title>
-    <link rel="stylesheet" href="add_style.css">
+    <link rel="stylesheet" href="edit_style.css">
 </head>
 
 
 
 <body>
     <div class="container">
-        <div id="hello"> ADD A STUDENT </div>
-        <form action="/addstudent" method="POST">
+        <div id="hello"> EDIT A STUDENT </div>
+        <form action="/editstudent" method="POST">
     
             <input 
                 type="text" 
                 placeholder="Registration Number" 
-                pattern="\d{2}[a-zA-Z]{3}\d{4}" 
+                pattern=".{6,}" 
                 required 
-                title="Enter VIT Registration number"
                 id="first"
                 name="reg"  
             />
@@ -48,17 +47,6 @@
         <br>
 
             <input 
-                type="email" 
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
-                required 
-                title="Enter a Valid E-mail ID" 
-                placeholder="Email" 
-                id="first"
-                name="email" 
-            />
-        <br>
-
-            <input 
                 type="number" 
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
                 required  
@@ -67,8 +55,9 @@
                 name="num" 
             />
         <br>
-            
-        <input type="submit" onclick="check()" value="Add a Student" class="button" id="third"><br><br>
+    
+
+        <input type="submit" onclick="check()" value="Edit Student" class="button" id="third"><br><br>
         <div style="color: green;" > <%= message %>  </div>
         </form>
     </div>

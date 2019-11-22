@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/43b6d4a4e8.js"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="style_login.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div id="hello"> LOGIN </div>
+        <form action="/login" method="POST">
+            <i class="fa fa-user-o" aria-hidden="true"></i><input name="email" type="text" placeholder="E-mail" pattern=".{6,}" title="Must be atleast 6 or more characters." required id="first" onmouseover="hovered(this)" onmouseout="removed(this)" ><br>
+            <i class="fa fa-key" aria-hidden="true"></i><input name="pass" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Password" id="second" onmouseover="hovered(this)" onmouseout="removed(this)"><br>
+            <input type="submit" value="Login" class="button" id="third"><br><br>
+            <div id="final">New Admin? <a href="/signup">Click to Register </a></div>
+            <div style="color: red;" > <%= result1 %> </div>  
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="script_login.js"></script>
+</body>
+
+</html>

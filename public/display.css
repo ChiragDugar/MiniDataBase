@@ -1,0 +1,37 @@
+body{
+    background-color: lightcoral;
+}
+
+.disp{
+    background-color: black;
+    color: white;
+    width: 30%;
+    /* height: 400px; */
+    margin-left: 30%;
+    border-radius: 10px;
+    text-align: center;
+    /* padding-left: 10%; */
+    padding: 30px;
+}
+
+.tobold{
+    color: violet ;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#third{    
+    text-decoration: none;
+    border: 2.5px solid darkgreen;
+    padding: 10px;
+    border-radius: 100px;
+    width: 140px;
+    display: inline-block;
+    background-color: black;
+    color: #B0B0B0;
+    cursor: pointer;
+}
+
+#third:active{
+    border-color: white;
+}

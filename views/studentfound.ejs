@@ -4,22 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Student Found/Not Found</title>
-    <link rel="stylesheet" href="style.css">
+    <title>STUDENT FOUND</title>
+    <link rel="stylesheet" href="display.css">
 </head>
 
+<style>
+h1{
+    text-align: center;
+    color: purple;
+    text-decoration: underline;
+}
+</style>
+
 <body>
-    <center>
-        <h1>The student data is successfully found!</h1>
-        <div>
-            <b>Name of the Student:</b><%= name %> <br>
-            <b> Registration Number: </b><%= reg %> <br>
-            <b> E-Mail ID: </b><%= email %> <br>
-            <b> Course: </b><%= course %> <br>
-            <b> Contact Number: </b><%= num %>
-            <br><br>
-        </div>
-    </center>
-    <a href="/">BACK TO HOME</a>
+    <h1 style="text-align: center;" >Student Data Successfully found. </h1> <br>
+    <div class="disp">
+            <table align="center" width="100%" >
+                <tr>
+                    <td class="tobold" >Regstration Number: </td>
+                    <td><%= user.reg %></td>
+                </tr>
+                <tr>
+                    <td class="tobold">Name: </td>
+                    <td><%= user.name %></td>
+                </tr>
+                <tr>
+                    <td class="tobold">Course: </td>
+                    <td><%= user.course %></td>
+                </tr>
+                <tr>
+                    <td class="tobold">E-Mail: </td>
+                    <td><%= user.email %></td>
+                </tr>
+                <tr>
+                    <td class="tobold">Contact Number: </td>
+                    <td><%= user.num %></td>
+                </tr>
+            </table>
+            <hr style="background-color: white; width: 80%; margin: 10px;" > 
+    </div>
+
+    <form action="/" style="margin-left: 43%; margin-top: 2%;" >
+        <input type="submit" value="Go Back" class="button" id="third"><br><br>            
+    </form>
 </body>
 </html>

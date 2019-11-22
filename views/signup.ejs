@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/43b6d4a4e8.js"></script>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style_signup.css">
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div id="hello"> REGISTER </div>
+        <form action="/signup" method="POST">
+            <form action="#" >
+            <i class="fa fa-user-o" aria-hidden="true"></i><input name="name" type="text" placeholder="Username" pattern=".{6,}" title="Must be atleast 6 or more characters." required id="first" onmouseover="hovered(this)" onmouseout="removed(this)" ><br>
+            <i class="fa fa-key" aria-hidden="true"></i><input name="pass" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Password" id="second" onmouseover="hovered(this)" onmouseout="removed(this)"><br>
+            <i class="fa fa-key" aria-hidden="true"></i><input name="confpass" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Confirm password" id="fourth" onmouseover="hovered(this)" onmouseout="removed(this)"><br>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i><input name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required title="Enter a Valid E-mail ID" placeholder="Email" id="fifth" onmouseover="hovered(this)" onmouseout="removed(this)"><br>
+            <input type="submit" onclick="check()" value="SignUp" class="button" id="third"><br><br>
+            <div id="final">Existing User? <a href="/login">Click to Login </a></div>  
+            <div id='show' ></div>
+            <div style="color: red;" > <%= result1 %>  </div>
+            <div style="color: green;" > <%= result %>  </div>
+            <% result = "" %>
+            <% result1 = "" %>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="script_signup.js"></script>
+</body>
+
+</html>
